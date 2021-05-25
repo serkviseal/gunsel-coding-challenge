@@ -8,7 +8,7 @@ Its like the index file for the rest of the components
 export class Global extends Component {
     render() {
         return (
-            <div className="global-container">
+            <div className={`global-container ${this.props.className}`}>
                 <Header />
                 {this.props.children}
                 {/**this is where the content will appear */}
