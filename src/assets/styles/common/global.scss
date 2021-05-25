@@ -53,6 +53,7 @@ body {
         list-style-type: none;
         padding: 0;
         @include flexjustifycontent(flex-end);
+        @include flexalignitems(flex-end);
         .left-container {
             margin-right: auto;
             img {

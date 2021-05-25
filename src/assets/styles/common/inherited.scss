@@ -22,3 +22,14 @@
         color: $blue-color;
     }
 }
+
+.defaults-banner {
+    min-height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include flexbox;
+    flex-direction: column;
+    @include flexalignitems(center);
+    @include flexjustifycontent(center);
+}
