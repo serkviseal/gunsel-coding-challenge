@@ -83,10 +83,83 @@
     }
 }
 
+body {
+    margin: 0 !important;
+}
+
 .global-container {
     background-color: $white-color;
     .container {
         max-width: 85%;
         margin: 0 auto;
+    }
+}
+
+.top-background {
+    background-color: $footer-background;
+}
+.header-container,
+.menu-container {
+    .container {
+        @include flexbox;
+        list-style-type: none;
+        padding: 0;
+        justify-content: flex-end;
+        .left-container {
+            margin-right: auto;
+            img {
+                padding: 1rem;
+            }
+        }
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 1rem;
+                list-style-type: none;
+                color: $grey-color;
+            }
+        }
+        .topnav {
+            overflow: hidden;
+
+            a {
+                position: relative;
+                float: left;
+                color: $grey-color;
+                text-align: center;
+                padding: 2rem;
+                text-decoration: none;
+                border-bottom: 2px solid $white-color;
+                &:hover {
+                    color: $blue-color;
+                    border-bottom: 2px solid $blue-color;
+                    font-weight: bold;
+                    svg {
+                        color: $blue-color;
+                    }
+                }
+                &.active {
+                    color: $blue-color;
+                    border-bottom: 2px solid $blue-color;
+                    font-weight: bold;
+                    svg {
+                        color: $blue-color;
+                    }
+                }
+                &::after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f0d7";
+                    font-weight: 900;
+                    display: none;
+                }
+                svg {
+                    color: $grey-color;
+                    margin-left: 0.5vw;
+                }
+            }
+        }
     }
 }
