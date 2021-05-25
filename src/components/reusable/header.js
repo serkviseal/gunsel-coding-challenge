@@ -40,7 +40,7 @@ export class Header extends Component {
                 <div className='menu-container'>
                     <div className='container'>
                         <div className='left-container'>
-                            <img src={logo} />
+                            <img src={logo} alt='header-logo' />
                         </div>
                        
                         <div class="topnav">
