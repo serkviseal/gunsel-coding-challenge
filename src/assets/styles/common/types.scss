@@ -1,0 +1,47 @@
+html {
+    font-size: 13px !important;
+
+    @media screen and (max-width: $mobile-md-lg) {
+        font-size: 10px !important;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+        font-family: $font-black;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: $font-bold;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        font-family: $font-bold;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-family: $font-semi-bold;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: $font-light;
+    }
+
+    h6 {
+        font-size: 0.95rem;
+        font-family: $font-regular;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-family: $font-regular;
+    }
+
+    a {
+        font-size: 1.3rem;
+        font-family: $font-semi-bold;
+    }
+}
