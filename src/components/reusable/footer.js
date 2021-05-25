@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faFacebook, faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 import logo from './../../assets/images/footer-logo.png';
 import Footer1 from './../../assets/images/footer-1.jpg';
 import Footer2 from './../../assets/images/footer-2.jpg';
