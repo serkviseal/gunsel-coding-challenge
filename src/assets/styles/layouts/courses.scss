@@ -1,0 +1,79 @@
+.courses-container {
+    background-color: #eceff1;
+    padding: 10vh 0;
+
+    h2 {
+        color: $text-color;
+    }
+    h4 {
+        color: $grey-color;
+    }
+    .courses-carousel-container {
+        padding: 10vh 0;
+    }
+
+    .course-item {
+        background-color: $white-color;
+        border-radius: 5px;
+        margin-right: 2vw;
+        cursor: pointer;
+        .course-background {
+            min-height: 40vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 5px;
+            img {
+                height: 6vh;
+                position: absolute;
+                bottom: -3.5vh;
+                left: 3vw;
+                border-radius: 50px;
+            }
+        }
+        .details {
+            padding: 2vw;
+            h3 {
+                color: $text-color;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            h6 {
+                margin: 0;
+                color: $grey-color;
+            }
+            .price-container {
+                @include flexbox;
+                @include flexjustifycontent(flex-end);
+                @include flexalignitems(flex-end);
+                padding-top: 3vh;
+                .left {
+                    margin-right: auto;
+                }
+                h4 {
+                    margin: 0;
+                    color: $blue-color;
+                }
+                p {
+                    margin: 0;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .info-container {
+            border-top: 1px solid #eceff1;
+            ul {
+                padding: 2vh;
+                grid-template-columns: repeat(3, 33%);
+                grid-column-gap: 1.5%;
+                display: grid;
+                li {
+                    list-style-type: none;
+                    color: $grey-color;
+                }
+            }
+        }
+    }
+}

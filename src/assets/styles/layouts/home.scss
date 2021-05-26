@@ -1,7 +1,7 @@
 .home-page {
     .home {
-        grid-template-columns: repeat(3, 33%);
-        grid-column-gap: 1.5%;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-column-gap: auto;
         grid-row-gap: 2vh;
         display: grid;
         text-align: center;

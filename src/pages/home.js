@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Global from '../components/reusable/global';
 import HeaderBanner from './../components/views/banner/HeaderBanner';
 import FooterBanner from './../components/views/banner/FooterBanner';
+import Courses from '../components/views/courses/Courses';
 import business from './../assets/images/business.png';
 import computer from './../assets/images/computer.png';
 import science from './../assets/images/science.png';
@@ -58,6 +59,7 @@ export class Home extends Component {
                         <p>It can all go to Hell. He felt a slight itch up on his belly, pushed himself up on his back towards the headboard so that he lift his head better</p>
                     </div>
                 </div>
+                <Courses />
                 <FooterBanner />
             </Global>
         )
