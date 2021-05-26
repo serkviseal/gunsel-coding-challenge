@@ -21,6 +21,13 @@
     transition: $value;
 }
 
+@mixin transform($value) {
+	-ms-transform: scale($value);
+    -moz-transform: scale($value);
+    -webkit-transform: scale($value);
+    transform: scale($value);
+}
+
 @mixin flexjustifycontent($property) {
 	-webkit-justify-content: $property;
 	-moz-justify-content: $property;

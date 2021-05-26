@@ -10,16 +10,8 @@
     min-height: 2.5rem;
     padding: 1rem;
     border: none;
-    @include flexbox;
-    @include flexalignitems(center);
-    @include flexjustifycontent(center);
     &:focus {
         outline: none;
-    }
-
-    &:hover {
-        background-color: $white-color;
-        color: $blue-color;
     }
 }
 

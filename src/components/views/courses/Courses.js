@@ -79,11 +79,11 @@ export class Courses extends Component {
     renderCoursesCard() {
         const { courses, isLoading } = this.state;
         if (courses.length !== 0 && !isLoading) {
-            const domain = [];
+            const course = [];
             for (let i = 0; i < courses.length; i++) {
-                domain.push(
+                course.push(
                     <Course
-                        key={`course ${courses[i].id}`}
+                        key={`course-${courses[i].id}`}
                         title={courses[i].title}
                         author={courses[i].author}
                         users={courses[i].users}
@@ -96,7 +96,7 @@ export class Courses extends Component {
                     />
                 );
             }
-            return domain;
+            return course;
         }
         if (courses.length === 0 && !isLoading) {
             return <p className="empty-course">No courses available at the moment!</p>;
@@ -116,7 +116,6 @@ export class Courses extends Component {
                         showDots={false}
                         responsive={responsive}
                         keyBoardControl={true}
-                        customTransition="0.5"
                         transitionDuration={500}
                         containerClass="courses-carousel-container"
                         removeArrowOnDeviceType={["mobile"]}
