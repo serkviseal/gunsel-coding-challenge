@@ -11,10 +11,10 @@ export class TopCourses extends Component {
                 <h2>TOP COURSES</h2>
                 <h4>Donec rutrum congue leo eget malesuada</h4>
                 <div className='course-grid-container'>
-                    <div class="menu-grid" style={{backgroundImage: `url(${wordpress})`}}><h2>BECOME A WORDPRESS EXPERT</h2></div>
-                    <div class="main-grid" style={{backgroundImage: `url(${python})`}}><h2>COMPLETE PYTHON MASTERCLASS</h2></div>
-                    <div class="right-grid" style={{backgroundImage: `url(${beginner})`}}><h2>BEGINNER TO PRO IN EXCEL</h2></div>
-                    <div class="footer-grid" style={{backgroundImage: `url(${javascript})`}}><h2>THE ULTIMATE COURSE TO BECOME JAVASCRIPT NINJA</h2></div>
+                    <div className='parent-grid menu-grid'><div className=" child-grid" style={{ backgroundImage: `url(${wordpress})` }}><h2>BECOME A WORDPRESS EXPERT</h2></div></div>
+                    <div className='parent-grid main-grid'><div className=" child-grid" style={{ backgroundImage: `url(${python})` }}><h2>COMPLETE PYTHON MASTERCLASS</h2></div></div>
+                    <div className='parent-grid right-grid'><div className=" child-grid" style={{ backgroundImage: `url(${beginner})` }}><h2>BEGINNER TO PRO IN EXCEL</h2></div></div>
+                    <div className='parent-grid footer-grid'><div className=" child-grid" style={{ backgroundImage: `url(${javascript})` }}><h2>THE ULTIMATE COURSE TO BECOME JAVASCRIPT NINJA</h2></div></div>
                 </div>
                 <button>BROWSE ALL</button>
             </div>

@@ -25,6 +25,7 @@ export class Course extends Component {
 
     render() {
         const {
+            key,
             title,
             author,
             users,
@@ -39,7 +40,7 @@ export class Course extends Component {
         return (
             <div className='course-item'>
                 <div className='course-background' style={{ backgroundImage: `url(${image})` }}>
-                    <img src={avatar} alt='logo58' />
+                    <img src={avatar} alt={key} />
                 </div>
                 <div className='details'>
                     <h3>{title}</h3>

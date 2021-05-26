@@ -5,6 +5,7 @@ import FooterBanner from './../components/views/banner/FooterBanner';
 import Courses from '../components/views/courses/Courses';
 import TopCourses from '../components/views/courses/TopCourses';
 import Services from '../components/views/services/Services';
+import Testimonies from '../components/views/testimonies/Testimonies';
 
 
 export class Home extends Component {
@@ -15,6 +16,7 @@ export class Home extends Component {
                 <Services />
                 <Courses />
                 <TopCourses />
+                <Testimonies />
                 <FooterBanner />
             </Global>
         )
