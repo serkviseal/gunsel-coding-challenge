@@ -1,0 +1,35 @@
+.default-btn {
+    /*
+      * Default-button css
+      */
+    background-color: $blue-color;
+    color: $white-color;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 13rem;
+    min-height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    @include flexbox;
+    @include flexalignitems(center);
+    @include flexjustifycontent(center);
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $white-color;
+        color: $blue-color;
+    }
+}
+
+.defaults-banner {
+    min-height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include flexbox;
+    flex-direction: column;
+    @include flexalignitems(center);
+    @include flexjustifycontent(center);
+}

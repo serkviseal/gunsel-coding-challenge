@@ -20,7 +20,7 @@ html {
         font-family: $font-bold;
     }
 
-    h4 {
+    h4, button {
         font-size: 1.1rem;
         font-family: $font-semi-bold;
     }
@@ -30,18 +30,19 @@ html {
         font-family: $font-light;
     }
 
-    h6 {
+    h6, li {
         font-size: 0.95rem;
         font-family: $font-regular;
     }
 
     p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: $font-regular;
     }
 
     a {
-        font-size: 1.3rem;
+        font-size: 1.125rem;
         font-family: $font-semi-bold;
     }
+
 }

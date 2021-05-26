@@ -7,3 +7,12 @@
 @import 'common/global';
 
 //layouts
+//Todo: rethink & refactor importing of scss
+@import 'layouts/footer-banner';
+@import 'layouts/header-banner';
+@import 'layouts/courses';
+@import 'layouts/home';
+
+//carousel
+//Todo: implement own carousel with own functionality
+@import '~react-multi-carousel/lib/styles.css';
